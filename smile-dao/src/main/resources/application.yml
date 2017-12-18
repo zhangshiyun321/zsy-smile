@@ -1,0 +1,27 @@
+## MySQL 数据源配置
+datasource:
+    url: jdbc:mysql://localhost:3306/smile?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: ZSY321
+    driver-class-name: com.mysql.jdbc.Driver
+    ## 连接池的配置信息
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: true
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+## Mybatis 配置
+mybatis:
+  mapper-locations: classpath*:**/mapper/**/*Mapper.xml
+  type-aliases-package: com.lingdu.smile.dao.domain
+  config-location: classpath:mybatis/mybatis-config.xml

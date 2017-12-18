@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/smile.iml" filepath="$PROJECT_DIR$/smile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smile-common/smile-common.iml" filepath="$PROJECT_DIR$/smile-common/smile-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smile-dao/smile-dao.iml" filepath="$PROJECT_DIR$/smile-dao/smile-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smile-service/smile-service.iml" filepath="$PROJECT_DIR$/smile-service/smile-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smile-web/smile-web.iml" filepath="$PROJECT_DIR$/smile-web/smile-web.iml" />
+    </modules>
+  </component>
+</project>
